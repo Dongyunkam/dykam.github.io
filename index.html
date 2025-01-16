@@ -18,17 +18,23 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            text-align: left;
         }
         .header {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
             margin-bottom: 50px;
         }
         .header img {
             width: 150px;
             height: 150px;
-            border-radius: 10px; /* 살짝 둥글린 네모 */
+            border-radius: 10px; /* 네모난 모양 */
             object-fit: cover; /* 이미지 비율 유지 */
-            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        .header-content {
+            flex-grow: 1;
         }
         .header h1 {
             font-size: 32px;
@@ -39,6 +45,7 @@
             font-size: 16px;
             font-weight: 400;
             color: #666666;
+            margin-top: 10px;
         }
         .section {
             margin-bottom: 40px;
@@ -76,9 +83,12 @@
     <div class="container">
         <!-- Header Section -->
         <div class="header">
+            <div class="header-content">
+                <h1>Dongyun Kam</h1>
+                <p>Postdoctoral Researcher</p>
+                <p>AI & Hardware Accelerators</p>
+            </div>
             <img src="profile.jpg" alt="Profile Picture">
-            <h1>Dongyun Kam</h1>
-            <p>Postdoctoral Researcher | AI & Hardware Accelerators</p>
         </div>
 
         <!-- About Section -->
