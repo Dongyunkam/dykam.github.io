@@ -13,12 +13,15 @@
             line-height: 1.6;
             background-color: #f4f4f4;
             color: #333;
+            display: flex;
+            flex-direction: row;
         }
         header {
             background: #333;
             color: #fff;
             padding: 1rem 0;
             text-align: center;
+            width: 100%;
         }
         header h1 {
             margin: 0;
@@ -28,7 +31,7 @@
             font-size: 1.2rem;
         }
         .container {
-            max-width: 900px;
+            max-width: 70%;
             margin: 2rem auto;
             padding: 1rem;
             background: #fff;
@@ -58,16 +61,37 @@
         a:hover {
             text-decoration: underline;
         }
+        .profile-pic {
+            width: 30%;
+            text-align: center;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 2rem;
+        }
+        .profile-pic img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            border: 2px solid #333;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Dongyun Kam, Ph.D.</h1>
-        <p>Postdoctoral Researcher | Hardware Architect for AI</p>
-        <p><a href="mailto:rkaehddbs@postech.ac.kr">rkaehddbs@postech.ac.kr</a> | <a href="https://dongyunkam.github.io">Personal Website</a> | <a href="https://scholar.google.com">Google Scholar</a></p>
-    </header>
+    <div class="profile-pic">
+        <img src="profile.jpg" alt="Dongyun Kam's Profile Picture">
+        <p><strong>Dongyun Kam, Ph.D.</strong></p>
+        <p>Postdoctoral Researcher<br>Hardware Architect for AI</p>
+    </div>
 
     <div class="container">
+        <header>
+            <h1>Dongyun Kam, Ph.D.</h1>
+            <p>Postdoctoral Researcher | Hardware Architect for AI</p>
+            <p><a href="mailto:rkaehddbs@postech.ac.kr">rkaehddbs@postech.ac.kr</a> | <a href="https://dongyunkam.github.io">Personal Website</a> | <a href="https://scholar.google.com">Google Scholar</a></p>
+        </header>
+
         <section>
             <h2>Research Interest</h2>
             <p>Designing hardware-friendly algorithms and efficient hardware architectures for a variety of applications including large-scale DNN inference, wireless communication systems, and signal processing units.</p>
