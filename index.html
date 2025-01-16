@@ -15,31 +15,40 @@
             color: #333;
         }
         header {
-            background: #333;
-            color: #fff;
-            padding: 1rem;
+            background: #fff;
+            padding: 2rem;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
         }
-        header .profile {
-            display: flex;
-            align-items: center;
-        }
-        header .profile img {
-            width: 70px;
-            height: 70px;
+        header .profile-pic {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            border: 2px solid #fff;
-            margin-right: 1rem;
+            margin-right: 2rem;
+            border: 2px solid #ccc;
+            flex-shrink: 0;
+        }
+        header .profile-info {
+            flex: 1;
         }
         header h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            color: #333;
         }
         header p {
-            margin: 0.2rem 0 0;
-            font-size: 1rem;
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+            color: #666;
+        }
+        header .links a {
+            color: #0066cc;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+        header .links a:hover {
+            text-decoration: underline;
         }
         .container {
             max-width: 900px;
@@ -65,29 +74,20 @@
         ul li {
             margin-bottom: 0.5rem;
         }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
     <header>
-        <div class="profile">
-            <img src="profile.jpg" alt="Dongyun Kam's Profile Picture">
-            <div>
-                <h1>Dongyun Kam, Ph.D.</h1>
-                <p>Postdoctoral Researcher | Hardware Architect for AI</p>
+        <img src="profile.jpg" alt="Dongyun Kam's Profile Picture" class="profile-pic">
+        <div class="profile-info">
+            <h1>Dongyun Kam, Ph.D.</h1>
+            <p>Postdoctoral Researcher | Hardware Architect for AI</p>
+            <div class="links">
+                <a href="mailto:rkaehddbs@postech.ac.kr">Email</a>
+                <a href="https://dongyunkam.github.io">Personal Website</a>
+                <a href="https://scholar.google.com">Google Scholar</a>
             </div>
         </div>
-        <p>
-            <a href="mailto:rkaehddbs@postech.ac.kr" style="color: #fff;">Email</a> | 
-            <a href="https://dongyunkam.github.io" style="color: #fff;">Personal Website</a> | 
-            <a href="https://scholar.google.com" style="color: #fff;">Google Scholar</a>
-        </p>
     </header>
 
     <div class="container">
