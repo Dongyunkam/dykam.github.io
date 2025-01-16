@@ -25,34 +25,33 @@
 
         /* Header Section */
         header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 10%;
             background: #fff;
-            border-bottom: 1px solid #ccc;
+            padding: 40px 10%;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
         }
-        .profile {
-            display: flex;
-            align-items: center;
-        }
-        .profile img {
-            width: 100px;
-            height: 100px;
+        header img {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            margin-right: 20px;
+            border: 3px solid #ccc;
+            margin-bottom: 20px;
         }
-        .profile h1 {
-            margin: 0;
-            font-size: 1.8rem;
-            color: #333;
+        header h1 {
+            margin: 10px 0;
+            font-size: 2rem;
         }
-        .links {
-            text-align: right;
+        header p {
+            margin: 5px 0;
+            font-size: 1.2rem;
+            color: #666;
         }
-        .links a {
-            display: block;
-            margin-bottom: 5px;
+        header .links {
+            margin-top: 10px;
+        }
+        header .links a {
+            margin-right: 15px;
+            font-size: 1rem;
         }
 
         /* Main Content */
@@ -68,8 +67,8 @@
             margin-bottom: 40px;
         }
         section h2 {
-            margin-bottom: 10px;
-            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
             border-bottom: 2px solid #0066cc;
             padding-bottom: 5px;
         }
@@ -84,10 +83,9 @@
 </head>
 <body>
     <header>
-        <div class="profile">
-            <img src="profile.jpg" alt="Dongyun Kam's Profile Picture">
-            <h1>Dongyun Kam, Ph.D.</h1>
-        </div>
+        <img src="profile.jpg" alt="Dongyun Kam's Profile Picture">
+        <h1>Dongyun Kam, Ph.D.</h1>
+        <p>Postdoctoral Researcher | Hardware Architect for AI</p>
         <div class="links">
             <a href="mailto:rkaehddbs@postech.ac.kr">Email</a>
             <a href="https://dongyunkam.github.io">Personal Website</a>
