@@ -22,18 +22,18 @@
         .header {
             display: flex;
             align-items: center;
-            justify-content: space-between; /* 사진과 텍스트 간격 조절 */
+            justify-content: space-between;
             margin-bottom: 50px;
-        }
-        .header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 10px; /* 살짝 둥근 모서리 */
-            object-fit: cover; /* 비율 유지 */
+            text-align: left;
         }
         .header-content {
-            flex-grow: 1;
-            text-align: left;
+            max-width: 60%;
+        }
+        .header img {
+            width: 180px;
+            height: 180px;
+            object-fit: contain; /* 이미지가 잘리지 않게 비율 유지 */
+            margin-left: 20px;
         }
         .header h1 {
             font-size: 32px;
