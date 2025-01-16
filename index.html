@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dongyun Kam</title>
+    <title>Dongyun Kam, Ph.D.</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -13,25 +13,36 @@
             line-height: 1.6;
             background-color: #f4f4f4;
             color: #333;
-            display: flex;
-            flex-direction: row;
         }
         header {
             background: #333;
             color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-            width: 100%;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header .profile {
+            display: flex;
+            align-items: center;
+        }
+        header .profile img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            margin-right: 1rem;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         header p {
-            font-size: 1.2rem;
+            margin: 0.2rem 0 0;
+            font-size: 1rem;
         }
         .container {
-            max-width: 70%;
+            max-width: 900px;
             margin: 2rem auto;
             padding: 1rem;
             background: #fff;
@@ -61,37 +72,25 @@
         a:hover {
             text-decoration: underline;
         }
-        .profile-pic {
-            width: 30%;
-            text-align: center;
-            background: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            padding: 1rem;
-            border-radius: 5px;
-            margin: 2rem;
-        }
-        .profile-pic img {
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
-            border: 2px solid #333;
-        }
     </style>
 </head>
 <body>
-    <div class="profile-pic">
-        <img src="profile.jpg" alt="Dongyun Kam's Profile Picture">
-        <p><strong>Dongyun Kam, Ph.D.</strong></p>
-        <p>Postdoctoral Researcher<br>Hardware Architect for AI</p>
-    </div>
+    <header>
+        <div class="profile">
+            <img src="profile.jpg" alt="Dongyun Kam's Profile Picture">
+            <div>
+                <h1>Dongyun Kam, Ph.D.</h1>
+                <p>Postdoctoral Researcher | Hardware Architect for AI</p>
+            </div>
+        </div>
+        <p>
+            <a href="mailto:rkaehddbs@postech.ac.kr" style="color: #fff;">Email</a> | 
+            <a href="https://dongyunkam.github.io" style="color: #fff;">Personal Website</a> | 
+            <a href="https://scholar.google.com" style="color: #fff;">Google Scholar</a>
+        </p>
+    </header>
 
     <div class="container">
-        <header>
-            <h1>Dongyun Kam, Ph.D.</h1>
-            <p>Postdoctoral Researcher | Hardware Architect for AI</p>
-            <p><a href="mailto:rkaehddbs@postech.ac.kr">rkaehddbs@postech.ac.kr</a> | <a href="https://dongyunkam.github.io">Personal Website</a> | <a href="https://scholar.google.com">Google Scholar</a></p>
-        </header>
-
         <section>
             <h2>Research Interest</h2>
             <p>Designing hardware-friendly algorithms and efficient hardware architectures for a variety of applications including large-scale DNN inference, wireless communication systems, and signal processing units.</p>
