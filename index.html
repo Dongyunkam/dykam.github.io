@@ -11,71 +11,121 @@
             padding: 0;
             line-height: 1.6;
         }
+        /* Thin header */
         header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px;
-            background: #f4f4f4;
+            background: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
-        header img {
-            width: 120px;
-            border-radius: 50%;
-        }
-        header .intro {
-            max-width: 60%;
-        }
-        nav {
-            margin-top: 20px;
-            text-align: center;
-        }
-        nav a {
+        header nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #333;
+            font-size: 14px;
+        }
+        header nav a:hover {
+            color: #007acc;
+        }
+        /* Main content layout */
+        main {
+            margin: 80px auto 20px; /* Leave space for fixed header */
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .profile-section img {
+            width: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile-section .intro {
+            max-width: 600px;
+        }
+        .profile-section h1 {
+            margin: 0 0 10px;
+            font-size: 24px;
+        }
+        .profile-section p {
+            margin: 0;
+            color: #555;
         }
         section {
-            padding: 20px;
-            margin: 10px auto;
-            max-width: 800px;
+            margin-bottom: 40px;
+        }
+        section h2 {
+            font-size: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        section ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
+    <!-- Thin header -->
     <header>
-        <div class="intro">
-            <h1>Dongyun Kam, Ph.D.</h1>
-            <p>Postdoctoral Researcher at POSTECH, specializing in efficient DNN accelerators and VLSI architectures.</p>
-        </div>
-        <img src="your-profile-picture.jpg" alt="Dongyun Kam">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="about">
-        <h2>About</h2>
-        <p>I am a postdoctoral researcher focused on...</p>
-    </section>
-    <section id="research">
-        <h2>Research Interests</h2>
-        <ul>
-            <li>Designing hardware-friendly algorithms</li>
-            <li>Efficient hardware architectures for large-scale DNN inference</li>
-        </ul>
-    </section>
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li><strong>Panacea: Novel DNN accelerator...</strong> (HPCA '25)</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: rkaehddbs@postech.ac.kr</p>
-        <p>GitHub: <a href="https://github.com/dongyunkam">github.com/dongyunkam</a></p>
-    </section>
+
+    <!-- Main content -->
+    <main>
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <img src="your-profile-picture.jpg" alt="Dongyun Kam">
+            <div class="intro">
+                <h1>Dongyun Kam, Ph.D.</h1>
+                <p>Postdoctoral Researcher at POSTECH, specializing in efficient DNN accelerators and VLSI architectures.</p>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About</h2>
+            <p>I am a postdoctoral researcher at POSTECH, focusing on developing energy-efficient hardware architectures for deep learning models and wireless communication systems.</p>
+        </section>
+
+        <!-- Research Interests -->
+        <section id="research">
+            <h2>Research Interests</h2>
+            <ul>
+                <li>Designing hardware-friendly algorithms for large-scale DNN inference</li>
+                <li>Efficient VLSI architectures for AI and signal processing applications</li>
+                <li>Algorithm-hardware co-optimization</li>
+            </ul>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li><strong>Panacea: Novel DNN accelerator...</strong> (HPCA '25)</li>
+                <li><strong>A 21.9 ns, 15.7 Gbps/mm<sup>2</sup> (128, 15) BOSS FEC decoder...</strong> (ISSCC '24)</li>
+                <li>And more...</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: rkaehddbs@postech.ac.kr</p>
+            <p>GitHub: <a href="https://github.com/dongyunkam" target="_blank">github.com/dongyunkam</a></p>
+        </section>
+    </main>
 </body>
 </html>
