@@ -3,134 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dongyun Kam</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Dongyun Kam - Personal Website</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: 'Roboto', sans-serif;
-            background-color: #ffffff;
-            color: #333333;
-            line-height: 1.8;
+            line-height: 1.6;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .header {
+        header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 50px;
-            text-align: left;
+            padding: 20px;
+            background: #f4f4f4;
         }
-        .header-content {
+        header img {
+            width: 120px;
+            border-radius: 50%;
+        }
+        header .intro {
             max-width: 60%;
         }
-        .header img {
-            width: 200px;
-            height: 200px;
-            object-fit: contain; /* 이미지가 잘리지 않게 비율 유지 */
-            margin-left: 20px;
-        }
-        .header h1 {
-            font-size: 32px;
-            font-weight: 700;
-            margin: 0;
-        }
-        .header p {
-            font-size: 16px;
-            font-weight: 400;
-            color: #666666;
-            margin-top: 10px;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .section h2 {
-            font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            border-bottom: 1px solid #eeeeee;
-            padding-bottom: 5px;
-        }
-        .section p {
-            font-size: 14px;
-            color: #444444;
-        }
-        .project {
-            margin-bottom: 15px;
-        }
-        .project a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        .project a:hover {
-            text-decoration: underline;
-        }
-        footer {
+        nav {
+            margin-top: 20px;
             text-align: center;
-            margin-top: 50px;
-            font-size: 12px;
-            color: #999999;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 800px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <div class="header">
-            <div class="header-content">
-                <h1>Dongyun Kam</h1>
-                <p>Postdoctoral Researcher</p>
-                <p>AI & Hardware Accelerators</p>
-            </div>
-            <img src="profile.jpg" alt="Profile Picture">
+    <header>
+        <div class="intro">
+            <h1>Dongyun Kam, Ph.D.</h1>
+            <p>Postdoctoral Researcher at POSTECH, specializing in efficient DNN accelerators and VLSI architectures.</p>
         </div>
-
-        <!-- About Section -->
-        <div class="section">
-            <h2>About Me</h2>
-            <p>
-                I am a researcher specializing in designing hardware-friendly algorithms and efficient hardware architectures 
-                for large-scale DNN inferences. My work bridges the gap between algorithm innovation and hardware implementation, 
-                focusing on energy-efficient AI systems.
-            </p>
-        </div>
-
-        <!-- Research Section -->
-        <div class="section">
-            <h2>Research</h2>
-            <div class="project">
-                <p><strong>Panacea: A Novel DNN Accelerator</strong></p>
-                <p>
-                    Combining accuracy-preserving asymmetric quantization with bit-slice sparsity for energy-efficient AI inference.
-                    <a href="https://example.com/paper" target="_blank">[HPCA '25]</a>
-                </p>
-            </div>
-            <div class="project">
-                <p><strong>Grow: Graph Convolution Accelerator</strong></p>
-                <p>
-                    A memory-efficient solution for sparse-dense GEMM operations in graph neural networks.
-                    <a href="https://example.com/paper" target="_blank">[HPCA '23]</a>
-                </p>
-            </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="section">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:rkaehddbs@postech.ac.kr">rkaehddbs@postech.ac.kr</a></p>
-            <p>GitHub: <a href="https://github.com/dongyunkam" target="_blank">https://github.com/dongyunkam</a></p>
-            <p>Website: <a href="https://dongyunkam.github.io/" target="_blank">https://dongyunkam.github.io/</a></p>
-        </div>
-
-        <!-- Footer -->
-        <footer>
-            © 2025 Dongyun Kam. All rights reserved.
-        </footer>
-    </div>
+        <img src="your-profile-picture.jpg" alt="Dongyun Kam">
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About</h2>
+        <p>I am a postdoctoral researcher focused on...</p>
+    </section>
+    <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+            <li>Designing hardware-friendly algorithms</li>
+            <li>Efficient hardware architectures for large-scale DNN inference</li>
+        </ul>
+    </section>
+    <section id="publications">
+        <h2>Publications</h2>
+        <ul>
+            <li><strong>Panacea: Novel DNN accelerator...</strong> (HPCA '25)</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: rkaehddbs@postech.ac.kr</p>
+        <p>GitHub: <a href="https://github.com/dongyunkam">github.com/dongyunkam</a></p>
+    </section>
 </body>
 </html>
