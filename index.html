@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dongyun Kam</title>
+    <title>Dongyun Kam - Research Profile</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f8f9fa;
+            background-color: #ffffff;
             color: #212529;
+            line-height: 1.6;
         }
         .container {
             max-width: 800px;
@@ -18,12 +18,19 @@
             padding: 20px;
         }
         .header {
-            text-align: center;
+            display: flex;
+            align-items: center;
             margin-bottom: 40px;
+        }
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 20px;
         }
         .header h1 {
             font-size: 2.5rem;
-            margin-bottom: 10px;
+            margin: 0;
         }
         .header p {
             font-size: 1.2rem;
@@ -38,15 +45,8 @@
             border-bottom: 2px solid #dee2e6;
             padding-bottom: 5px;
         }
-        .project {
+        .project, .publication {
             margin-bottom: 20px;
-        }
-        .project h3 {
-            margin: 0;
-            font-size: 1.2rem;
-        }
-        .project p {
-            margin: 5px 0;
         }
         footer {
             text-align: center;
@@ -58,19 +58,25 @@
 </head>
 <body>
     <div class="container">
+        <!-- Header Section -->
         <div class="header">
-            <h1>Your Name</h1>
-            <p>Postdoctoral Researcher | AI & Hardware Accelerators</p>
+            <img src="profile.jpg" alt="Profile Picture">
+            <div>
+                <h1>Dongyun Kam, Ph.D.</h1>
+                <p>Postdoctoral Researcher | AI & Hardware Accelerators</p>
+            </div>
         </div>
 
+        <!-- About Section -->
         <div class="section">
             <h2>About Me</h2>
             <p>
-                I am a researcher specializing in deep learning accelerators, with a passion for hardware optimization and energy-efficient AI systems. 
-                My work bridges the gap between algorithm innovation and hardware implementation, focusing on next-generation DNN inferences.
+                I am a researcher specializing in designing hardware-friendly algorithms and efficient hardware architectures for large-scale DNN inferences. 
+                My work focuses on the intersection of algorithm innovation and hardware implementation, aiming for energy-efficient AI systems.
             </p>
         </div>
 
+        <!-- Research Section -->
         <div class="section">
             <h2>Research</h2>
             <div class="project">
@@ -83,17 +89,30 @@
             </div>
         </div>
 
+        <!-- Publications Section -->
+        <div class="section">
+            <h2>Publications</h2>
+            <div class="publication">
+                <p>[1] D. Kam, M. Yun, S. Yoo, et al., "Panacea: Novel DNN accelerator using accuracy-preserving asymmetric quantization and energy-saving bit-slice sparsity," Accepted by HPCA, 2025.</p>
+            </div>
+            <div class="publication">
+                <p>[2] J. Kim, S. Han, D. Kam, et al., "Constrained sorter design using zero-one principle," ISCAS, 2025.</p>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
         <div class="section">
             <h2>Contact</h2>
             <p>
-                Email: <a href="mailto:yourname@example.com">yourname@example.com</a><br>
-                GitHub: <a href="https://github.com/yourusername" target="_blank">@yourusername</a><br>
-                LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">Your LinkedIn</a>
+                Email: <a href="mailto:rkaehddbs@postech.ac.kr">rkaehddbs@postech.ac.kr</a><br>
+                GitHub: <a href="https://github.com/dongyunkam" target="_blank">@dongyunkam</a><br>
+                Personal Website: <a href="https://dongyunkam.github.io/" target="_blank">dongyunkam.github.io</a>
             </p>
         </div>
 
+        <!-- Footer -->
         <footer>
-            © 2025 Your Name. All rights reserved.
+            © 2025 Dongyun Kam. All rights reserved.
         </footer>
     </div>
 </body>
