@@ -18,23 +18,22 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            text-align: left;
         }
         .header {
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between; /* 사진과 텍스트 간격 조절 */
             margin-bottom: 50px;
         }
         .header img {
             width: 150px;
             height: 150px;
-            border-radius: 10px; /* 네모난 모양 */
-            object-fit: cover; /* 이미지 비율 유지 */
-            margin-left: 20px;
+            border-radius: 10px; /* 살짝 둥근 모서리 */
+            object-fit: cover; /* 비율 유지 */
         }
         .header-content {
             flex-grow: 1;
+            text-align: left;
         }
         .header h1 {
             font-size: 32px;
